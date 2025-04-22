@@ -24,7 +24,6 @@ footer {
     padding: 1rem;
 }
 
-/* HTML: <div class="loader"></div> */
 .loader {
   width: fit-content;
   font-size: 40px;
