@@ -34,4 +34,3 @@
 
       window.addEventListener('scroll', onScroll);
     });
-  </script>
