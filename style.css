@@ -30,6 +30,7 @@ footer {
   font-family: monospace;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
   color: #0000;
   -webkit-text-stroke: 1px #000;
   background: conic-gradient(#000 0 0) -1ch/1ch 100% no-repeat text;
