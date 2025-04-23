@@ -10,14 +10,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/*
 main {
     flex: 1;
     padding: 2rem;
     padding-top: 5rem;
     color: rgba(15, 15, 15, 1.0);
 }
-
+*/
 .page-wrapper {
   min-height: 100%;
   display: flex;
