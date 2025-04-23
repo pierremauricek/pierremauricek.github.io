@@ -42,7 +42,6 @@ body {
     background: none;
     border: none;
     color: black;
-    font-size: 1.5rem;
     cursor: pointer;
     margin-right: 1rem;
   }
@@ -62,7 +61,7 @@ body {
     display: none;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     padding: 1rem;
   }
 
@@ -71,6 +70,11 @@ body {
     text-decoration: none;
     margin: 0.5rem 0;
   }
+
+.menu-icon {
+    width: 2rem;
+    height: auto
+}
 
   .menu.show {
     display: flex;
@@ -143,7 +147,7 @@ body {
   }
   
   .right {
-    margin-left: 50vw; /
+    margin-left: 50vw;
     width: 50vw;
     height: 100vh;
     padding: 2rem;
@@ -155,7 +159,7 @@ body {
   }
   
 
-footer {;
+footer {
     background-color: rgba(15, 15, 15, 1.0);
     color: white;
     text-align: center;
@@ -172,7 +176,7 @@ footer {;
     }
 
     .right {
-        margin-left: 0px; /
+        margin-left: 0px;
         width: 100vw;
         height: 100vh;
         padding: 2rem;
