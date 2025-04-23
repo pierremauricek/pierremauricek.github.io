@@ -82,7 +82,7 @@ main {
     mix-blend-mode: overlay;
     z-index: 9999;
     filter: url(#grain);
-    opacity: 0.3;
+    opacity: 0.2;
   }
 
 footer {
