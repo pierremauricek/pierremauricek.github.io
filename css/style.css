@@ -99,14 +99,13 @@ main {
   .text-section {
     width: 50%;
     height: 100vh;
-    overflow-y: scroll;
     padding: 2rem;
     box-sizing: border-box;
     background-color: #fefefe;
   }
 
   .image-section {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
