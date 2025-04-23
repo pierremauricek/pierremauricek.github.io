@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     /*background-image: url('./img/khaos.jpg');*/
-    background-color: rgb(222, 222, 222);
+    background-color: rgba(240, 240, 240, 1.0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,6 @@ main {
     flex: 1;
     padding: 2rem;
     padding-top: 5rem;
-    color: white;
 }
 
 .page-wrapper {
@@ -54,6 +53,9 @@ main {
   .logo {
     margin: 0;
     font-size: 1.2rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .menu {
