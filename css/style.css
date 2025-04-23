@@ -52,12 +52,15 @@ main {
 
   .logo {
   margin: 0;
-  max-height: 1rem;
-  max-width: auto;
   margin-left: auto;
   margin-right: auto;
   }
 
+    .logo img {
+        height: 0.7rem;
+        width: auto;
+    }
+    
   .menu {
     display: none;
     flex-direction: column;
