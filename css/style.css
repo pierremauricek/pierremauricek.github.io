@@ -2,7 +2,12 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-size: medium;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     /*background-image: url('./img/khaos.jpg');*/
     background-color: rgba(240, 240, 240, 1.0);
     background-size: cover;
@@ -184,5 +189,8 @@ footer {
         overflow: auto;
     }
 
+    .logo {
+        margin-right: 2rem;
+        }
 
 }
