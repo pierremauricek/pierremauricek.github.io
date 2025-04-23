@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     /*background-image: url('./img/khaos.jpg');*/
-    background-color: rgba(226, 212, 183, 1.0);
+    background-color: rgb(222, 222, 222);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
