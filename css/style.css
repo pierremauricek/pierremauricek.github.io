@@ -1,13 +1,4 @@
-@media (max-width: 768px) {
-    .left {
-      display: none;
-    }
-  
-    .right {
-      margin-left: 0;
-      width: 100vw;
-    }
-  }
+
 
 body {
     margin: 0;
@@ -172,3 +163,21 @@ footer {;
     padding: 1rem;
 }
 
+
+@media (max-width: 768px) {
+    .left {
+        display: none; /* Hides the left container */
+        width: 0; /* Ensures it takes no space */
+        height: 0; /* Ensures it takes no space */
+    }
+
+    .right {
+        margin-left: 0px; /
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem;
+        overflow: auto;
+    }
+
+
+}
