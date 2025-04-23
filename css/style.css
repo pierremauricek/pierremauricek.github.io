@@ -23,6 +23,17 @@ main {
   flex-direction: column;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    padding: 1rem;
+  }
+  
+  .menu.hidden {
+    display: none;
+  }
+
 footer {
     background-color: rgba(156, 149, 131, 0.6);
     color: white;
@@ -30,3 +41,4 @@ footer {
     height: 5rem;
     padding: 1rem;
 }
+
