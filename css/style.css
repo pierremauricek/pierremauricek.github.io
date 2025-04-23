@@ -15,6 +15,7 @@ main {
     flex: 1;
     padding: 2rem;
     padding-top: 5rem;
+    color: rgba(15, 15, 15, 1.0);
 }
 
 .page-wrapper {
@@ -91,7 +92,7 @@ main {
   }
 
 footer {
-    background-color: rgba(156, 149, 131, 0.6);
+    background-color: rgba(15, 15, 15, 1.0);
     color: white;
     text-align: center;
     height: 5rem;
