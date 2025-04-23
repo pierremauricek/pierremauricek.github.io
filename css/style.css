@@ -30,6 +30,7 @@ main {
     background-color: rgba(226, 212, 183, 1.0);
     border-radius: 0 0 0.1rem 0.5rem;
     border-bottom: #444;
+    border-width: 0.1rem;
     color: white;
     padding: 1rem;
     height: 4rem;
