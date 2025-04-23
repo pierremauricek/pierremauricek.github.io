@@ -1,3 +1,14 @@
+@media (max-width: 768px) {
+    .left {
+      display: none;
+    }
+  
+    .right {
+      margin-left: 0;
+      width: 100vw;
+    }
+  }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,6 +26,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .site-header {
@@ -85,43 +97,66 @@ body {
   }
 
   .button {
-    background-color: rgba(15, 15, 15, 0.8);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 10rem;
+    color: rgba(0, 0, 0, 1.0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.05);
+    padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 0.65rem;
     margin-top: 1rem;
-  }
+    position: relative; /* Needed for the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element respects the border radius */
+    z-index: 0; /* Ensures the text stays above the pseudo-element */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit; /* Matches the button's border radius */
+    pointer-events: none;
+    background: none;
+    mix-blend-mode: overlay;
+    filter: url(#grain);
+    opacity: 0.2;
+    z-index: -1; /* Places the pseudo-element behind the text */
+}
 
   .container {
     display: flex;
     height: 100vh;
     position: relative;
-    padding-bottom: 5vh; /* damit Platz für Footer bleibt */
   }
   
   .left {
     width: 50%;
-    position: sticky;
+    position: fixed;
+    background-position: center; 
     top: 0;
     height: 100vh;
     overflow: hidden;
   }
   
   .left img {
-    padding-top: 6rem;
-    width: 100%;
-    height: 100%;
+    margin-top: 9rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 3%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
   }
   
   .right {
-    width: 50%;
-    overflow-y: auto;
-    max-height: 100vh;
+    margin-left: 50vw; /
+    width: 50vw;
+    height: 100vh;
     padding: 2rem;
+    overflow: auto;
   }
   
   .content {
@@ -129,7 +164,7 @@ body {
   }
   
 
-footer {
+footer {;
     background-color: rgba(15, 15, 15, 1.0);
     color: white;
     text-align: center;
