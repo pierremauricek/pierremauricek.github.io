@@ -74,6 +74,17 @@ main {
     display: flex;
   }
 
+  .grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: none;
+    mix-blend-mode: overlay;
+    z-index: 9999;
+    filter: url(#grain);
+    opacity: 0.3;
+  }
+
 footer {
     background-color: rgba(156, 149, 131, 0.6);
     color: white;

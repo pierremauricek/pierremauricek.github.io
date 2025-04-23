@@ -11,9 +11,11 @@
 </head>
 <body>
     <header class="site-header">
-        <button class="menu-button">☰</button>
-        <h1 class="logo">Meine Seite</h1>
-      </header>
+        <div class="grain">
+            <button class="menu-button">☰</button>
+            <h1 class="logo">Meine Seite</h1>
+        </div>
+    </header>
     
       <nav class="menu">
         <a href="#">Home</a>
@@ -21,6 +23,8 @@
         <a href="#">Kontakt</a>
       </nav>
     
+
+
    <div class="page-wrapper"></div>
     <main>
         <h1>Willkommen auf Khaos's Personal Blog</h1>
@@ -47,5 +51,13 @@
     <footer>
         &copy; 2025 KHAOS.CAM – KHAOS'S PERSONAL BLOG
     </footer>
+
+    <svg width="0" height="0">
+        <filter id="grain">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+      </svg>
+
 </body>
 </html>
