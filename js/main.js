@@ -23,12 +23,19 @@ function spawnFooterImage(event) {
     }, 1000); // remove after 1 second
   }
   
-  document.addEventListener('DOMContentLoaded', function () {
-    const checkbox = document.querySelector('.dark-mode-checkbox');
-  
-    checkbox.checked = localStorage.getItem('dark_mode_enabled') === 'true';
-  
-    checkbox.addEventListener('change', function (event) {
-      localStorage.setItem('dark_mode_enabled', event.currentTarget.checked);
-    });
+
+  const toggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  // Lade gespeichertes Theme beim Laden der Seite
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    root.setAttribute('data-theme', savedTheme);
+  }
+
+  // Toggle-Funktion
+  toggle.addEventListener('click', () => {
+    const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', currentTheme);
+    localStorage.setItem('theme', currentTheme);
   });
