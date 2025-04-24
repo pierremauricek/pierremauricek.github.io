@@ -2,7 +2,6 @@ document.querySelector('.menu-button').addEventListener('click', () => {
     document.querySelector('.menu').classList.toggle('hidden');
   });
 
-
 function spawnFooterImage(event) {
     event.preventDefault(); // prevent link navigation, remove if not needed
   
@@ -41,11 +40,15 @@ function spawnFooterImage(event) {
     localStorage.setItem('theme', currentTheme);
 
 
-    var img1 = "../img/logo-dark.png",
-      img2 = "../img/logo-light.png";
+    var img1 = "/img/logo-dark.png", img2 = "/img/logo-light.png";
     var imgElement = document.getElementById("logo-image");
+    const newTheme = root.getAttribute('data-theme2') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme2', newTheme);
+    localStorage.setItem('theme2', newTheme);
   
-    imgElement.src = imgElement.src === img1 ? img2 : img1;
+    // Logo entsprechend dem neuen Theme wechseln
+    imgElement.src = newTheme === "dark" ? img1 : img2;
+
 
   });
 
