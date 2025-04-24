@@ -41,8 +41,8 @@ function spawnFooterImage(event) {
     localStorage.setItem('theme', currentTheme);
 
 
-    var img1 = "/img/logo-dark.png",
-      img2 = "/img/logo-light.png";
+    var img1 = "../img/logo-dark.png",
+      img2 = "../img/logo-light.png";
     var imgElement = document.getElementById("logo-image");
   
     imgElement.src = imgElement.src === img1 ? img2 : img1;
