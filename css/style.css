@@ -1,5 +1,5 @@
 * {
-    cursor: url(/img/cursor.png), auto;
+    cursor: url(/img/cursor.png), none;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    /*background-image: url('./img/khaos.jpg');*/
     background-color: rgba(240, 240, 240, 1.0);
     background-size: cover;
     background-position: center;
