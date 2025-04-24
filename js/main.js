@@ -52,6 +52,8 @@ function spawnFooterImage(event) {
 
   const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
+
+/*
 const logo = document.querySelector('.logo img'); // Select the logo image element
 const menubtn = document.querySelector('.menu-button img'); // Select the logo image element
 
@@ -68,6 +70,8 @@ function updateImages(theme) {
     }
 }
 
+
+
 // Load the saved theme and set the correct logo on page load
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
@@ -77,6 +81,8 @@ if (savedTheme) {
     // Default to light theme if no theme is saved
     updateImages('light');
 }
+*/
+
 
 // Toggle theme and update the logo when the toggle is clicked
 toggle.addEventListener('click', () => {
