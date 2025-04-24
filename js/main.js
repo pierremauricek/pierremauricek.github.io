@@ -33,14 +33,10 @@ function spawnFooterImage(event) {
     root.setAttribute('data-theme', savedTheme);
   }
 
-  var img1 = "/img/logo-dark.png", img2 = "/img/logo-light.png";
-  var imgElement = document.getElementById("logo-image");
 
   const currentTheme = root.getAttribute('data-theme');
   if (currentTheme === 'dark') {
-    imgElement.src = img1;
-  } else if (currentTheme === 'light') {
-    imgElement.src = img2;
+    document.getElementById("logo-image").style.filter="invert(100%)";
   } 
 
   // Toggle-Funktion
