@@ -58,12 +58,12 @@ const menubtn = document.querySelector('.menubtn img'); // Select the logo image
 
 
 // Function to update the logo based on the theme
-function updateLogo(theme) {
+function updateImages(theme) {
     if (theme === 'dark') {
         logo.src = '/img/logo-light.png'; // Path to the dark theme logo
-        logo.src = '/img/menu-light.png'; // Path to the dark theme logo
+        menubtn.src = '/img/menu-light.png'; // Path to the dark theme logo
     } else {
-        menubtn.src = '/img/logo-dark.png'; // Path to the light theme logo
+        logo.src = '/img/logo-dark.png'; // Path to the light theme logo
         menubtn.src = '/img/menu-light.png'; // Path to the dark theme logo
     }
 }
@@ -72,10 +72,10 @@ function updateLogo(theme) {
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     root.setAttribute('data-theme', savedTheme);
-    updateLogo(savedTheme);
+    updateImages(savedTheme);
 } else {
     // Default to light theme if no theme is saved
-    updateLogo('light');
+    updateImages('light');
 }
 
 // Toggle theme and update the logo when the toggle is clicked
@@ -83,5 +83,5 @@ toggle.addEventListener('click', () => {
     const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', currentTheme);
     localStorage.setItem('theme', currentTheme);
-    updateLogo(currentTheme);
+    updateImages(currentTheme);
 });
