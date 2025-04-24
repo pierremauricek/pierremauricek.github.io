@@ -182,6 +182,19 @@ footer {
     padding: 1rem;
 }
 
+#footer-note {
+    color: white;
+    text-decoration: none;
+}
+
+.spawned-footer-img {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+  }
 
 @media (max-width: 768px) {
     .left {
