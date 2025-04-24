@@ -28,9 +28,17 @@ function spawnFooterImage(event) {
 
 
 
-  
+
+
+
 const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
+
+// Lade gespeichertes Theme beim Laden der Seite
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  root.setAttribute('data-theme', savedTheme);
+}
 
 // Toggle theme and update the logo when the toggle is clicked
 toggle.addEventListener('click', () => {
