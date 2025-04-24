@@ -1,5 +1,5 @@
 * {
-    cursor: url(/img/cursor.png), none;
+    cursor: url(/img/cursor.png), default;
 }
 
 body {
@@ -66,7 +66,6 @@ body {
     }
 
   .menu {
-    display: none;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: 3.5rem;
@@ -86,6 +85,10 @@ body {
 
   .menu.show {
     display: flex;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .grain {
