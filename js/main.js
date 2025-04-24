@@ -53,13 +53,18 @@ function spawnFooterImage(event) {
   const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 const logo = document.querySelector('.logo img'); // Select the logo image element
+const menu = document.querySelector('.menu-button img'); // Select the logo image element
+
+
 
 // Function to update the logo based on the theme
 function updateLogo(theme) {
     if (theme === 'dark') {
         logo.src = '/img/logo-light.png'; // Path to the dark theme logo
+        logo.src = '/img/menu-light.png'; // Path to the dark theme logo
     } else {
-        logo.src = '/img/logo-dark.png'; // Path to the light theme logo
+        menu.src = '/img/logo-dark.png'; // Path to the light theme logo
+        menu.src = '/img/menu-light.png'; // Path to the dark theme logo
     }
 }
 
