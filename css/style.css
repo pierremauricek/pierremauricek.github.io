@@ -1,5 +1,5 @@
 * {
-    cursor: url(./img/logo.png), auto;
+    cursor: url(../img/logo.png), auto;
 }
 
 body {
@@ -191,9 +191,4 @@ footer {
         padding: 2rem;
         overflow: auto;
     }
-
-    .logo {
-        margin-right: 2rem;
-        }
-
 }
