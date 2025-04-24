@@ -1,4 +1,4 @@
-document.querySelector('.menubtn').addEventListener('click', () => {
+document.querySelector('.menu-button').addEventListener('click', () => {
     document.querySelector('.menu').classList.toggle('hidden');
   });
 
@@ -53,7 +53,7 @@ function spawnFooterImage(event) {
   const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 const logo = document.querySelector('.logo img'); // Select the logo image element
-const menubtn = document.querySelector('.menubtn img'); // Select the logo image element
+const menubtn = document.querySelector('.menu-button img'); // Select the logo image element
 
 
 
