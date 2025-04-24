@@ -57,9 +57,9 @@ const logo = document.querySelector('.logo img'); // Select the logo image eleme
 // Function to update the logo based on the theme
 function updateLogo(theme) {
     if (theme === 'dark') {
-        logo.src = '/img/logo-dark.png'; // Path to the dark theme logo
+        logo.src = '/img/logo-light.png'; // Path to the dark theme logo
     } else {
-        logo.src = '/img/logo-light.png'; // Path to the light theme logo
+        logo.src = '/img/logo-dark.png'; // Path to the light theme logo
     }
 }
 
