@@ -27,6 +27,7 @@ function spawnFooterImage(event) {
   const toggle = document.getElementById('theme-toggle');
   const root = document.documentElement;
 
+
   // Lade gespeichertes Theme beim Laden der Seite
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -38,4 +39,15 @@ function spawnFooterImage(event) {
     const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', currentTheme);
     localStorage.setItem('theme', currentTheme);
+
+
+    var img1 = "/img/logo-dark.png",
+      img2 = "/img/logo-light.png";
+    var imgElement = document.getElementById("logo-image");
+  
+    imgElement.src = imgElement.src === img1 ? img2 : img1;
+
   });
+
+
+  

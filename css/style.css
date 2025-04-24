@@ -1,10 +1,12 @@
 :root {
   --bg-color: rgba(240, 240, 240, 1.0);
+  --bg-color-header: rgba(255, 255, 255, 0.2);
   --text-color: rgba(0, 0, 0, 1.0);
 }
 
 [data-theme="dark"] {
   --bg-color: rgba(0, 0, 0, 1.0);
+  --bg-color-header: rgba(0, 0, 0, 0.2);
   --text-color: rgba(240, 240, 240, 1.0);
 }
 
@@ -46,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: var(--bg-color-header);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* für Safari */
     color: var(--text-color);
