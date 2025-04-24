@@ -64,7 +64,7 @@ function updateImages(theme) {
         menubtn.src = '/img/menu-light.png'; // Path to the dark theme logo
     } else {
         logo.src = '/img/logo-dark.png'; // Path to the light theme logo
-        menubtn.src = '/img/menu-light.png'; // Path to the dark theme logo
+        menubtn.src = '/img/menu-dark.png'; // Path to the dark theme logo
     }
 }
 
