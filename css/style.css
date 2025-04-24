@@ -1,11 +1,11 @@
 :root {
-  --bg-color: rgba(240, 240, 240, 1.0);;
-  --text-color: black;
+  --bg-color: rgba(240, 240, 240, 1.0);
+  --text-color: rgba(0, 0, 0, 1.0);
 }
 
 [data-theme="dark"] {
-  --bg-color: #111;
-  --text-color: #eee;
+  --bg-color: rgba(0, 0, 0, 1.0);
+  --text-color: rgba(240, 240, 240, 1.0);
 }
 
 
@@ -211,6 +211,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
     padding-top: 6rem;
     flex-grow: 1;
     padding-right: 2rem;
+    text-align: justify;
 
   }
   
@@ -238,6 +239,9 @@ footer {
   }
 
 @media (max-width: 768px) {
+  .menu-button {
+    rotate: 90deg;
+  }
     .left {
         display: none; /* Hides the left container */
         width: 0; /* Ensures it takes no space */
