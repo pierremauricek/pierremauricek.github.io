@@ -23,3 +23,12 @@ function spawnFooterImage(event) {
     }, 1000); // remove after 1 second
   }
   
+  document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.querySelector('.dark-mode-checkbox');
+  
+    checkbox.checked = localStorage.getItem('dark_mode_enabled') === 'true';
+  
+    checkbox.addEventListener('change', function (event) {
+      localStorage.setItem('dark_mode_enabled', event.currentTarget.checked);
+    });
+  });

@@ -1,9 +1,33 @@
+/**/
+:root {
+  /* Light theme */
+  --c-light-text: #333;
+  --c-light-background: #fff;
+  --c-light-focus: deepskyblue;
+  --c-light-interactive: mediumvioletred;
+
+  /* Dark theme */
+  --c-dark-text: #fff;
+  --c-dark-background: #333;
+  --c-dark-focus: deeppink;
+  --c-dark-interactive: palegreen;
+}
+/**/
 * {
     cursor: url(/img/cursor.png), default;
 }
 
 body {
+  /**/
+  --c-text: var(--c-light-text);
+  --c-background: var(--c-light-background);
+  --c-focus: var(--c-light-focus);
+  --c-interactive: var(--c-light-interactive);
 
+
+  color: var(--c-text);
+  background-color: var(--c-background);
+  /**/
     margin: 0;
     font-family: "Noto Sans", sans-serif;
     font-size: 0.9rem;
@@ -11,7 +35,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    background-color: rgba(240, 240, 240, 1.0);
+    /*background-color: rgba(240, 240, 240, 1.0);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +43,15 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/**/
+.dark-mode-checkbox:checked ~ .body {
+  /* Override the default theme */
+  --c-text: var(--c-dark-text);
+  --c-background: var(--c-dark-background);
+  --c-focus: var(--c-dark-focus);
+  --c-interactive: var(--c-dark-interactive);
+}
+/**/
 .page-wrapper {
   min-height: 100%;
   display: flex;
