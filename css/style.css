@@ -2,20 +2,24 @@
   --bg-color: rgba(240, 240, 240, 1.0);
   --bg-color-header: rgba(240, 240, 240, 0.2);
   --bg-colog-blog-post: rgba(255, 255, 255, 1.0);
+  --bg-color-blog-tags: rgba(224, 224, 224, 1.0);
   --bg-color-footer: rgba(150, 150, 150, 0.2);
   --logo-color: rgba(0, 0, 0, 1.0);
   --menu-button-color: rgba(0, 0, 0, 1.0);
   --text-color: rgba(0, 0, 0, 1.0);
+  --text-color-blog-post: rgba(0, 0, 0, 1.0);
 }
 
 [data-theme="dark"] {
   --bg-color: rgba(0, 0, 0, 1.0);
   --bg-color-header: rgba(0, 0, 0, 0.2 );
   --bg-color-blog-post: rgba(240, 240, 240, 0.2);
+  --bg-color-blog-tags: rgba(35, 35, 35, 1.0);
   --bg-color-footer: rgba(0, 0, 0, 0.2);
   --logo-color: rgba(240, 240, 240, 1.0);
   --menu-button-color: rgba(240, 240, 240, 1.0);
   --text-color: rgba(240, 240, 240, 1.0);
+  --text-color-blog-post: rgba(255, 255, 255, 1.0);
 }
 
 
@@ -294,12 +298,12 @@ footer {
 .post-title {
   margin-top: 0;
   margin-bottom: 0.25rem;
-  color: #000000;
+  color: var(--text-color-blog-post);
 }
 
 .post-meta {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-color-blog-post);
   margin-bottom: 2rem;
 }
 
@@ -317,7 +321,7 @@ footer {
 
 .post-tags .tag {
   display: inline-block;
-  background: #e0e0e0;
+  background: var(--bg-color-blog-tags);
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
   font-size: 0.85rem;
