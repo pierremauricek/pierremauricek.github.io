@@ -163,7 +163,7 @@ body {
     pointer-events: none;
     background: none;
     mix-blend-mode: overlay;
-    z-index: 9999;
+    z-index: 5;
     filter: url(#grain);
     opacity: 0.2;
   }
