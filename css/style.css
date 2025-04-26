@@ -113,7 +113,7 @@ body {
 }
 
 .menu {
-  z-index: 1001;
+  z-index: 1;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease-in-out, background-color 0.3s, color 0.3s;
@@ -301,7 +301,7 @@ text-decoration: none;
     width: 30px;
     height: 30px;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 5;
     transition: opacity 0.3s ease;
   }
 
