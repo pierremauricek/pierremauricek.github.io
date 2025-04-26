@@ -241,6 +241,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
   
   .content {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     flex-grow: 1;
     text-align: justify;
   }
