@@ -113,12 +113,12 @@ body {
 }
 
 .menu {
-  z-index: 501;
+  z-index: 400;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease-in-out, background-color 0.3s, color 0.3s;
 
-  background-color: var(--bg-color-header);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* für Safari */
   
