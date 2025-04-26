@@ -30,8 +30,7 @@
 
 a {
   color: var(--text-color);
-  transition: color 0.3s, color 0.3s;
-}
+transition: background-color 0.3s, color 0.3s;}
 
 body {
     margin: 0;
@@ -46,10 +45,8 @@ body {
     flex-direction: column;
    
     background-color: var(--bg-color);
-    transition: background-color 0.3s, color 0.3s;
     color: var(--text-color);
-    transition: color 0.3s, color 0.3s;
-}
+  transition: background-color 0.3s, color 0.3s;}
 
 .page-wrapper {
   min-height: 100%;
@@ -67,12 +64,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: var(--bg-color-header);
-    transition: background-color 0.3s, color 0.3s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* für Safari */
     color: var(--text-color);
-    transition: color 0.3s, color 0.3s;
-    padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 1rem;
     height: 4rem;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -186,8 +182,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
   left: 2rem;
   top: 7rem;
   color: var(--text-color);
-  transition: color 0.3s, color 0.3s;
-  padding: 1rem;
+transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   
   cursor: pointer;
   font-size: 1rem;
@@ -262,10 +257,9 @@ display: none; /*HIDE MENU UNTIL FIXED*/
 
 footer {
     background-color: var(--bg-color-footer);
-    transition: background-color 0.3s, color 0.3s;
     color: var(--text-color);
-    transition: color 0.3s, color 0.3s;
-    text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     height: 15rem;
     padding: 1rem;
@@ -273,8 +267,8 @@ footer {
 
 #footer-note {
   color: var(--text-color);
-  transition: color 0.3s, color 0.3s;
-  text-decoration: none;
+transition: background-color 0.3s, color 0.3s;
+text-decoration: none;
 }
 
 .spawned-footer-img {
@@ -309,14 +303,12 @@ footer {
   margin-top: 0;
   margin-bottom: 0.25rem;
   color: var(--text-color-blog-post);
-  transition: color 0.3s, color 0.3s;
-}
+transition: background-color 0.3s, color 0.3s;}
 
 .post-meta {
   font-size: 0.9rem;
   color: var(--text-color-blog-post);
-  transition: color 0.3s, color 0.3s;
-  margin-bottom: 2rem;
+transition: background-color 0.3s, color 0.3s;  margin-bottom: 2rem;
 }
 
 .post-author-image img{
