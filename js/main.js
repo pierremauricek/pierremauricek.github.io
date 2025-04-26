@@ -1,7 +1,3 @@
-document.querySelector('.menu-button').addEventListener('click', () => {
-    document.querySelector('.menu').classList.toggle('hidden');
-  });
-
 function spawnFooterImage(event) {
     event.preventDefault(); // prevent link navigation, remove if not needed
   
@@ -29,7 +25,7 @@ function spawnFooterImage(event) {
   const menu = document.getElementById('menu');
 
   toggleMenu.addEventListener('click', () => {
-    menu.classList.toggleMenu('open');
+    menu.classList.toggle('open');
   });
 
   // MENU TOGGLE
