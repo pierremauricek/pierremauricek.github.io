@@ -120,8 +120,8 @@ body {
   background-color: #444;
 
   background-color: var(--bg-color-header);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* für Safari */
+  filter: blur(10px);
+  -webkit-filter: blur(10px); /* für Safari */
   color: var(--text-color);
 
   width: 100vw;
