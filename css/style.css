@@ -118,6 +118,11 @@ body {
   max-height: 0;
   transition: max-height 0.4s ease-in-out;
   background-color: #444;
+  width: 100vw;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+
 }
 
 .menu ul {
