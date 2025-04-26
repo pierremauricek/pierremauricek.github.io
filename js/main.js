@@ -25,10 +25,10 @@ function spawnFooterImage(event) {
   
 // MENU TOGGLE
 
-  const toggle = document.getElementById('menu-button');
+  const toggleMenu = document.getElementById('menu-button');
   const menu = document.getElementById('menu');
 
-  toggle.addEventListener('click', () => {
+  toggleMenu.addEventListener('click', () => {
     menu.classList.toggle('open');
   });
 
