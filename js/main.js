@@ -29,7 +29,7 @@ function spawnFooterImage(event) {
   const menu = document.getElementById('menu');
 
   toggleMenu.addEventListener('click', () => {
-    menu.classList.toggle('open');
+    menu.classList.toggleMenu('open');
   });
 
   // MENU TOGGLE
