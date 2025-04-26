@@ -92,7 +92,7 @@ body {
 
 /*MENU*/
 
-.menu-button {
+#menu-button {
   background: none;
   border: none;
   cursor: pointer;
