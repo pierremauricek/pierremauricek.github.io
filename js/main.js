@@ -46,3 +46,25 @@ toggle.addEventListener('click', () => {
     root.setAttribute('data-theme', currentTheme);
     localStorage.setItem('theme', currentTheme);
 });
+
+
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (isDarkMode) {
+  document.documentElement.setAttribute('data-theme', 'dark');
+} else {
+  document.documentElement.setAttribute('data-theme', 'light');
+}
+
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+function updateTheme(e) {
+  const newTheme = e.matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+}
+
+// Initial setzen
+updateTheme(mediaQuery);
+
+// Listener hinzufügen
+mediaQuery.addEventListener('change', updateTheme);
