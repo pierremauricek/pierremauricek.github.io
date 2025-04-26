@@ -23,6 +23,14 @@ function spawnFooterImage(event) {
   }
 
   
+//
+// 
+// const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu-button');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
 
 
 
