@@ -62,6 +62,7 @@ body {
     height: 4rem;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
   }
 
 
@@ -163,15 +164,19 @@ display: none; /*HIDE MENU UNTIL FIXED*/
 }
 
 #theme-toggle {
+
   background-color: rgba(255, 255, 255, 0);
-  
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: inset 0px -1px 3px 1px rgba(0,0,0,0.1);
-  padding: 1rem 1rem;
-  margin-right: 2rem;
+  float: left;
+  left: 2rem;
+  top: 7rem;
+  color: var(--text-color);
+  padding: 1rem;
+  
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 100%;
+  border-radius: 10px;
   display: inline-flex;
   position: relative; /* Needed for the pseudo-element */
   overflow: hidden; /* Ensures the pseudo-element respects the border radius */
@@ -180,7 +185,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
 
 #theme-toggle::after {
   content: '';
-  position: absolute;
+  position: relative;
   inset: 0;
   border-radius: inherit; /* Matches the button's border radius */
   pointer-events: none;
@@ -215,15 +220,20 @@ display: none; /*HIDE MENU UNTIL FIXED*/
     width: 80%;
     height: 80%;
     object-fit: cover;
-    box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
 
   }
+
+  /*
+  .left img:hover {
+    filter: brightness(0.8);
+    
+  }
+  */
   
   .right {
-    
-    width: 50vw;
-    
-    padding: 2rem;
+    width: 50%;
+    padding: 4rem;
     overflow: hidden;
     flex-direction: column;
   }
@@ -231,9 +241,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
   .content {
     padding-top: 6rem;
     flex-grow: 1;
-    padding-right: 2rem;
     text-align: justify;
-
   }
   
 
@@ -266,6 +274,7 @@ footer {
   .menu-button {
     rotate: 90deg;
   }
+
     .left {
         display: none; /* Hides the left container */
         width: 0; /* Ensures it takes no space */
@@ -278,5 +287,6 @@ footer {
         height: 100vh;
         padding: 2rem;
         overflow: auto;
+        flex-direction: column;
     }
 }
