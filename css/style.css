@@ -220,6 +220,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
     width: 80%;
     height: 80%;
     object-fit: cover;
+    /*border: 1px solid rgba(255, 255, 255, 0.3);*/
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
 
   }
