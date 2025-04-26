@@ -143,7 +143,7 @@ body {
 
 /* Wenn aktiv, wird max-height groß genug, um Inhalt zu zeigen */
 .menu.open {
-  height: 100%; /* groß genug für Inhalt – oder einfach 1000px */
+  height: calc(100vh - 6rem);
 }
 
 /*MENU*/
