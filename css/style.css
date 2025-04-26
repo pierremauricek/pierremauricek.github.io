@@ -30,7 +30,7 @@
 
 a {
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: color 0.3s, color 0.3s;
 }
 
 body {
@@ -46,8 +46,9 @@ body {
     flex-direction: column;
    
     background-color: var(--bg-color);
-    color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    color: var(--text-color);
+    transition: color 0.3s, color 0.3s;
 }
 
 .page-wrapper {
@@ -66,9 +67,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: var(--bg-color-header);
+    transition: background-color 0.3s, color 0.3s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* für Safari */
     color: var(--text-color);
+    transition: color 0.3s, color 0.3s;
     padding: 1rem;
     height: 4rem;
     z-index: 1000;
@@ -88,7 +91,7 @@ body {
 #logo-image{
   margin-top: 0;
   fill: var(--logo-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: fill 0.3s, color 0.3s;
 }
 
 
@@ -104,7 +107,7 @@ body {
 #menu-button-image {
   margin: 0;
   fill: var(--menu-button-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: fill 0.3s, color 0.3s;
 }
 
   .menu {
@@ -183,6 +186,7 @@ display: none; /*HIDE MENU UNTIL FIXED*/
   left: 2rem;
   top: 7rem;
   color: var(--text-color);
+  transition: color 0.3s, color 0.3s;
   padding: 1rem;
   
   cursor: pointer;
@@ -210,7 +214,6 @@ display: none; /*HIDE MENU UNTIL FIXED*/
   .container {
     display: flex;
     flex: 1;
-    
   }
   
   .left {
@@ -259,8 +262,9 @@ display: none; /*HIDE MENU UNTIL FIXED*/
 
 footer {
     background-color: var(--bg-color-footer);
-    color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    color: var(--text-color);
+    transition: color 0.3s, color 0.3s;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     height: 15rem;
@@ -268,8 +272,8 @@ footer {
 }
 
 #footer-note {
-
   color: var(--text-color);
+  transition: color 0.3s, color 0.3s;
   text-decoration: none;
 }
 
@@ -294,6 +298,7 @@ footer {
 
 .blog-post {
   background: var(--bg-color-blog-post);
+  transition: background-color 0.3s, color 0.3s;
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 20px;
@@ -304,11 +309,13 @@ footer {
   margin-top: 0;
   margin-bottom: 0.25rem;
   color: var(--text-color-blog-post);
+  transition: color 0.3s, color 0.3s;
 }
 
 .post-meta {
   font-size: 0.9rem;
   color: var(--text-color-blog-post);
+  transition: color 0.3s, color 0.3s;
   margin-bottom: 2rem;
 }
 
@@ -327,6 +334,7 @@ footer {
 .post-tags .tag {
   display: inline-block;
   background: var(--bg-color-blog-tags);
+  transition: background-color 0.3s, color 0.3s;
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
   font-size: 0.85rem;
