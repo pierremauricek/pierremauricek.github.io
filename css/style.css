@@ -115,7 +115,7 @@ body {
 .menu {
   z-index: 1;
   overflow: hidden;
-  max-height: 0;
+  max-height: 100vh;;
   transition: max-height 0.4s ease-in-out;
   background-color: #444;
   width: 100vw;
