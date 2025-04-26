@@ -28,6 +28,11 @@
     cursor: url(/img/cursor.png), default;
 }
 
+a {
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
