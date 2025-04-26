@@ -11,7 +11,7 @@
 [data-theme="dark"] {
   --bg-color: rgba(0, 0, 0, 1.0);
   --bg-color-header: rgba(0, 0, 0, 0.2 );
-  -bg-colog-blog-post: rgba(240, 240, 240, 0.2);
+  -bg-color-blog-post: rgba(240, 240, 240, 0.2);
   --bg-color-footer: rgba(0, 0, 0, 0.2);
   --logo-color: rgba(240, 240, 240, 1.0);
   --menu-button-color: rgba(240, 240, 240, 1.0);
@@ -284,7 +284,7 @@ footer {
 }
 
 .blog-post {
-  background: var(--bg-colog-blog-post);
+  background: var(--bg-color-blog-post);
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 20px;
