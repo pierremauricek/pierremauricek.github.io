@@ -116,8 +116,14 @@ body {
   z-index: 5;
   overflow: hidden;
   height: 0;
-  transition: height 0.4s ease-in-out;
-  background-color: #444;
+  transition: height 0.3s ease-in-out;
+  
+  background-color: var(--bg-color-header);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* für Safari */
+    color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+
   width: 100vw;
   position: absolute;
   top: 6rem;
