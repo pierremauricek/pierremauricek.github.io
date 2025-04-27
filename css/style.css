@@ -297,7 +297,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
     margin-top: 8rem; /* Zentriert das Bild horizontal */
     margin-left: 2rem;
     border-radius: 20px;
-    width: 100%;
+    
     height: calc(100% - 10rem); /* Verhindert, dass das Bild verzerrt wird */
     max-height: calc(100% - 2rem); /* Stellt sicher, dass das Bild nicht über den Container hinausgeht */
     object-fit: cover;
