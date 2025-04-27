@@ -373,7 +373,8 @@ transition: background-color 0.3s, color 0.3s;}
 .post-meta {
   font-size: 0.9rem;
   color: var(--text-color-blog-post);
-transition: background-color 0.3s, color 0.3s;  margin-bottom: 2rem;
+transition: background-color 0.3s, color 0.3s;
+margin-bottom: 2rem;
 }
 
 .post-author-image img{
@@ -390,7 +391,8 @@ transition: background-color 0.3s, color 0.3s;  margin-bottom: 2rem;
 
 .post-tags .tag {
   display: inline-block;
-  background: var(--bg-color-blog-tags);
+  background-color: var(--bg-color-blog-tags);
+  color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
