@@ -356,7 +356,7 @@ text-decoration: none;
 }
 
 .blog-post {
-  background: var(--bg-color-blog-post);
+  background-color: var(--bg-color-blog-post);
   transition: background-color 0.3s, color 0.3s;
   padding: 1.5rem;
   margin-bottom: 2rem;
