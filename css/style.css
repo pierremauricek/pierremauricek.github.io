@@ -93,9 +93,12 @@ body.lock-scroll {
 
 #logo-image{
   margin-top: 0;
-  cursor: pointer;
   fill: var(--logo-color);
   transition: fill 0.3s, color 0.3s;
+}
+
+#logo-image path {
+  cursor: pointer;
 }
 
 /*MENU*/
