@@ -70,7 +70,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   padding: 1rem;
     height: 4rem;
-    z-index: 500;
+    z-index: 5;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
   }
@@ -113,7 +113,7 @@ body {
 }
 
 .menu {
-  z-index: 600;
+  z-index: 4;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease-in-out, background-color 0.3s, color 0.3s;
@@ -163,7 +163,7 @@ body {
     pointer-events: none;
     background: none;
     mix-blend-mode: overlay;
-    z-index: 9999;
+    z-index: 6;
     filter: url(#grain);
     opacity: 0.2;
   }
