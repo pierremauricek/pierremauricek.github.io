@@ -166,7 +166,7 @@ body.lock-scroll {
 .social-media {
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   right: 50%;
