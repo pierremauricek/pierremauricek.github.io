@@ -288,7 +288,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
     height: 100vh;
     display: flex; /* Flexbox hinzufügen */
     flex-direction: column; /* Stellt sicher, dass Inhalte vertikal gestapelt werden */
-    justify-content: flex-end; /* Bild nach unten ausrichten */
+    justify-content: flex-start; /* Bild nach unten ausrichten */
     padding-bottom: 2rem; /* Abstand von 2rem zur Unterseite */
     overflow: hidden;
   }
@@ -296,8 +296,8 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   .left img {
     margin: 0 auto; /* Zentriert das Bild horizontal */
     border-radius: 20px;
-    width: 80%;
-    height: auto; /* Verhindert, dass das Bild verzerrt wird */
+    width: 100%;
+    height: calc(100% - 10rem); /* Verhindert, dass das Bild verzerrt wird */
     max-height: calc(100% - 2rem); /* Stellt sicher, dass das Bild nicht über den Container hinausgeht */
     object-fit: cover;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
