@@ -294,7 +294,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   }
    
   .left img {
-    margin-top: 8rem; /* Zentriert das Bild horizontal */
+    margin-top: 10rem; /* Zentriert das Bild horizontal */
     margin-left: 2rem;
     border-radius: 20px;
     
@@ -314,7 +314,9 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
 
   .right {
     width: 50%;
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     overflow: hidden;
     flex-direction: column;
   }
