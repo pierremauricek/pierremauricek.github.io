@@ -442,6 +442,7 @@ margin-bottom: 2rem;
 /*BLOG POSTS*/
 
 
+/*MEDIA QUERIES – iPhone*/
 
 @media (max-width: 768px) {
   .menu-button {
@@ -462,3 +463,7 @@ margin-bottom: 2rem;
         flex-direction: column;
     }
 }
+
+/*MEDIA QUERIES – iPad*/
+
+/*MEDIA QUERIES*/
