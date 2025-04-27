@@ -155,7 +155,7 @@ body.lock-scroll {
 
 /* Wenn aktiv, wird max-height groß genug, um Inhalt zu zeigen */
 .menu.open {
-  height: 100%;
+  height: calc(100vh - 6rem);
   overflow: hidden;
 }
 
