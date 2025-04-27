@@ -274,12 +274,12 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   opacity: 0.2;
   z-index: -1; /* Places the pseudo-element behind the text */
 }
-/*
+
   .container {
     display: flex;
     flex: 1;
   }
-  */
+  
   .left {
     width: 50%;
     position: sticky;
@@ -312,6 +312,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   */
 
   .right {
+    
     width: 50%;
  
     overflow: hidden;
