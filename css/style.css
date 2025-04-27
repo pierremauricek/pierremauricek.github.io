@@ -120,6 +120,10 @@ body.lock-scroll {
   transition: fill 0.3s, color 0.3s;
 }
 
+#menu-button-image path {
+  cursor: pointer;
+}
+
 .menu-icon {
     width: 2rem;
     height: auto
