@@ -160,6 +160,15 @@ body.lock-scroll {
   overflow: hidden;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  bottom: 2rem;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+
 /*MENU*/
 
   .hidden {
