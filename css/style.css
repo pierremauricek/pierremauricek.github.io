@@ -139,7 +139,7 @@ body.lock-scroll {
 
 .menu ul {
   list-style: none;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
 }
 
@@ -148,7 +148,8 @@ body.lock-scroll {
 }
 
 .menu a {
-  color: white;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
   font-size: 1.2rem;
 }
