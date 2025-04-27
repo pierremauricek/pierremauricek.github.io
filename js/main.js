@@ -26,8 +26,15 @@ function spawnFooterImage(event) {
 
   toggleMenu.addEventListener('click', () => {
     menu.classList.toggle('open');
+    document.body.classList.toggle('lock-scroll');
   });
 
+  document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        document.body.classList.remove('lock-scroll');
+    });
+});
   // MENU TOGGLE
 
 
