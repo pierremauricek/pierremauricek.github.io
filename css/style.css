@@ -292,7 +292,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
     overflow: hidden;
   }
    
-  .left img {
+  .content-left {
     margin-top: 9rem; /* Zentriert das Bild horizontal */
     margin-left: 2rem;
     border-radius: 20px;
@@ -305,7 +305,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   }
 
   /*
-  .left img:hover {
+  .content-left:hover {
     filter: brightness(0.8);
     
   }
@@ -318,7 +318,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
     flex-direction: column;
   }
   
-  .content {
+  .content-right {
     margin-top: 8rem;
     margin-left: 2rem;
     margin-right: 2rem;
