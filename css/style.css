@@ -157,6 +157,7 @@ body.lock-scroll {
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* Wenn aktiv, wird max-height groß genug, um Inhalt zu zeigen */
