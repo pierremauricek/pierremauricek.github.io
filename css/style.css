@@ -166,6 +166,7 @@ body.lock-scroll {
 .social-media {
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 /*MENU*/
