@@ -294,11 +294,11 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   }
    
   .left img {
-    margin-top: 10rem; /* Zentriert das Bild horizontal */
+    margin-top: 9rem; /* Zentriert das Bild horizontal */
     margin-left: 2rem;
     border-radius: 20px;
     
-    height: calc(100% - 12rem); /* Verhindert, dass das Bild verzerrt wird */
+    height: calc(100% - 11rem); /* Verhindert, dass das Bild verzerrt wird */
     max-height: calc(100% - 2rem); /* Stellt sicher, dass das Bild nicht über den Container hinausgeht */
     object-fit: cover;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
@@ -314,7 +314,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
 
   .right {
     width: 50%;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-left: 4rem;
     padding-right: 2rem;
     overflow: hidden;
