@@ -155,6 +155,10 @@ body.lock-scroll {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.menu li:last-child {
+  border-bottom: none;
+}
+
 .menu a {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
