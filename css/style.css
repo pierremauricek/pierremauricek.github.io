@@ -164,7 +164,7 @@ body.lock-scroll {
   display: flex;
   position: relative;
   justify-content: center;
-  top: 80%;
+  bottom: 80%;
 }
 
 /*MENU*/
