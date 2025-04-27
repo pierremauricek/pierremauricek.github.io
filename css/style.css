@@ -118,7 +118,8 @@ body {
   height: 0;
   transition: height 0.3s ease-in-out, background-color 0.3s, color 0.3s;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-color-header);
+  color: var(--text-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* für Safari */
   
@@ -149,6 +150,7 @@ body {
 /* Wenn aktiv, wird max-height groß genug, um Inhalt zu zeigen */
 .menu.open {
   height: calc(100vh - 6rem);
+  overflow: hidden;
 }
 
 /*MENU*/
