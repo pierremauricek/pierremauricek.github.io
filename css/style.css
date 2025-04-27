@@ -170,7 +170,6 @@ body.lock-scroll {
   cursor: pointer;
 }
 
-/* Wenn aktiv, wird max-height groß genug, um Inhalt zu zeigen */
 .menu.open {
   height: calc(100vh - 6rem);
   overflow: hidden;
@@ -195,6 +194,10 @@ body.lock-scroll {
 
   .hidden {
     display: none;
+  }
+
+  .justification {
+    text-align: justify;
   }
 
   .grain {
@@ -308,17 +311,8 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
 
   }
 
-  /*
-  .content-left:hover {
-    filter: brightness(0.8);
-    
-  }
-  */
-
   .right {
-    
     width: 50%;
- 
     overflow: hidden;
     flex-direction: column;
   }
@@ -328,7 +322,6 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     flex-grow: 1;
-    text-align: justify;
   }
   
 /*SITE STRUCTURE*/
