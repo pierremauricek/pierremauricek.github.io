@@ -222,7 +222,6 @@ body.lock-scroll {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 0.65rem;
-    margin-top: 1rem;
     position: relative; /* Needed for the pseudo-element */
     overflow: hidden; /* Ensures the pseudo-element respects the border radius */
     z-index: 0; /* Ensures the text stays above the pseudo-element */
