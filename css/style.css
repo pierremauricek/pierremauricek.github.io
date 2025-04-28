@@ -227,19 +227,6 @@ body.lock-scroll {
     z-index: 0; /* Ensures the text stays above the pseudo-element */
 }
 
-.button::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit; /* Matches the button's border radius */
-    pointer-events: none;
-    background: none;
-    mix-blend-mode: overlay;
-    filter: url(#grain);
-    opacity: 0.2;
-    z-index: -1; /* Places the pseudo-element behind the text */
-}
-
 #theme-toggle {
 
   background-color: rgba(255, 255, 255, 0);
