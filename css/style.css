@@ -180,7 +180,6 @@ body.lock-scroll {
   display: flex;
   position: static;
   justify-content: center;
-  position: absolute;
   margin-bottom: 2rem;
   left: 50%;
   right: 50%;
