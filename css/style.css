@@ -178,9 +178,10 @@ body.lock-scroll {
 
 .social-media {
   display: flex;
+  position: fixed;
   justify-content: center;
   position: absolute;
-  bottom: 2rem;
+  margin-bottom: 2rem;
   left: 50%;
   right: 50%;
 }
