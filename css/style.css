@@ -381,7 +381,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   margin-bottom: 2rem;
 }
 
-.post-author-image img{
+.post-author-image {
   width: 30px;
   height: 30px;
   border-radius: 100%;
