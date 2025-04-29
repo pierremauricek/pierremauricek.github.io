@@ -383,6 +383,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
 
 .post-author {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .post-author-image {
@@ -392,6 +393,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   display: inline-block;
   vertical-align: top;
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 .post-content {
