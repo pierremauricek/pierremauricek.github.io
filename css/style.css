@@ -378,7 +378,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   font-size: 0.9rem;
   color: var(--text-color-blog-post);
   /*transition: background-color 0.3s, color 0.3s;*/
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .post-author {
