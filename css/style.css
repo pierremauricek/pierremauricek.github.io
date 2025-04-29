@@ -360,7 +360,7 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
 
 .blog-post {
   background-color: var(--bg-color-blog-post);
-  transition: background-color 0.3s, color 0.3s;
+  /*transition: background-color 0.3s, color 0.3s;*/
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 20px;
@@ -371,13 +371,13 @@ transition: background-color 0.3s, color 0.3s;  padding: 1rem;
   margin-top: 0;
   margin-bottom: 0.25rem;
   color: var(--text-color-blog-post);
-transition: background-color 0.3s, color 0.3s;}
+  transition: background-color 0.3s, color 0.3s;}
 
 .post-meta {
   font-size: 0.9rem;
   color: var(--text-color-blog-post);
-transition: background-color 0.3s, color 0.3s;
-margin-bottom: 2rem;
+  /*transition: background-color 0.3s, color 0.3s;*/
+  margin-bottom: 2rem;
 }
 
 .post-author-image img{
