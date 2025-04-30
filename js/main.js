@@ -96,17 +96,22 @@ document.addEventListener('scroll', function () {
 
   const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
 
-  // Fade out the image
-  contentLeft.style.opacity = 0;
+
 
   // Wait for the fade-out to complete, then change the image and fade it back in
   setTimeout(() => {
     if (percent > 60) {
       contentLeft.src = "/img/pierre-maurice.jpg";
+        // Fade out the image
+  contentLeft.style.opacity = 0;
     } else if (percent > 30) {
       contentLeft.src = "/img/khaos.jpg";
+        // Fade out the image
+  contentLeft.style.opacity = 0;
     } else if (percent >= 0) {
       contentLeft.src = "/img/khaos_2.jpg";
+        // Fade out the image
+  contentLeft.style.opacity = 0;
     }
 
     // Fade in the image
