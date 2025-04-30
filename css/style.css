@@ -476,8 +476,8 @@ body.lock-scroll {
   position: absolute;
   top: 30px;
   right: 40px;
-  color: #fff;
-  font-size: 20pt;
+  color: var(--text-color);
+  font-size: 40pt;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
