@@ -473,7 +473,7 @@ body.lock-scroll {
   position: absolute;
   top: 30px;
   right: 40px;
-  color: var(--text-color);
+  color: rgba(240, 240, 240, 1.0);
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
