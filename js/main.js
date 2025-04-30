@@ -84,22 +84,34 @@ mediaQuery.addEventListener('change', updateTheme);
 
 
 
-// Change Main Image on Scroll
-document.addEventListener('scroll', function() {
-  var h = document.documentElement, 
-      b = document.body,
-      st = 'scrollTop',
-      sh = 'scrollHeight';
+// Change Main Image on Scroll with Fade Animation
+document.addEventListener('scroll', function () {
+  const contentLeft = document.getElementById("content-left");
 
-  var percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+  // Determine scroll percentage
+  const h = document.documentElement,
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
 
-  if (percent > 60) {
-      document.getElementById("content-left").src = "/img/pierre-maurice.jpg";
-  } else if (percent > 30) {
-      document.getElementById("content-left").src = "/img/khaos.jpg";
-  } else if (percent >= 0) {
-      document.getElementById("content-left").src = "/img/khaos_2.jpg";
-  }
+  const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+
+  // Fade out the image
+  contentLeft.style.opacity = 0;
+
+  // Wait for the fade-out to complete, then change the image and fade it back in
+  setTimeout(() => {
+    if (percent > 60) {
+      contentLeft.src = "/img/pierre-maurice.jpg";
+    } else if (percent > 30) {
+      contentLeft.src = "/img/khaos.jpg";
+    } else if (percent >= 0) {
+      contentLeft.src = "/img/khaos_2.jpg";
+    }
+
+    // Fade in the image
+    contentLeft.style.opacity = 1;
+  }, 300); // Match this duration to the CSS transition duration
 });
 
 
