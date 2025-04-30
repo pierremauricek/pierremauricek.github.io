@@ -469,8 +469,7 @@ body.lock-scroll {
 
 
 .lightbox-content {
-  margin: auto;
-  display: block;
+  align-self: center;
   max-width: 90%;
   max-height: 80%;
 }
