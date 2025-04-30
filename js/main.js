@@ -85,7 +85,7 @@ mediaQuery.addEventListener('change', updateTheme);
 
 
 // Change Main Image on Scroll
-document.addEventListener('scroll-percentage', function() {
+document.addEventListener('scroll', function() {
   var h = document.documentElement, 
       b = document.body,
       st = 'scrollTop',
