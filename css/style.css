@@ -36,7 +36,7 @@ a {
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
-    font-size: 0.9rem;
+    font-size: 10pt;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -243,7 +243,7 @@ body.lock-scroll {
   
   
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 10pt;
   border-radius: 10px;
   display: inline-flex;
   position: absolute; /* Needed for the pseudo-element */
@@ -337,7 +337,7 @@ body.lock-scroll {
     margin: 2rem;
     bottom: 0;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 10pt;
   }
 /*FOOTER*/
 
@@ -371,7 +371,7 @@ body.lock-scroll {
   }
 
 .post-meta {
-  font-size: 0.9rem;
+  font-size: 10pt;
   color: var(--text-color-blog-post);
   /*transition: background-color 0.3s, color 0.3s;*/
   margin-bottom: 1rem;
@@ -405,7 +405,7 @@ body.lock-scroll {
   transition: background-color 0.3s, color 0.3s;
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 10pt;
   margin-right: 0.4rem;
   margin-top: 0.5rem;
 }
@@ -473,7 +473,7 @@ body.lock-scroll {
   top: 30px;
   right: 40px;
   color: #fff;
-  font-size: 40px;
+  font-size: 20pt;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
