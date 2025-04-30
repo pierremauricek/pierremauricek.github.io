@@ -93,9 +93,10 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     lightbox.style.display = 'flex';
+
     lightboxImg.src = img.src;
     document.body.classList.toggle('lock-scroll');
-  });
+  }, 300);
 });
 
 document.querySelector('.close').addEventListener('click', () => {
