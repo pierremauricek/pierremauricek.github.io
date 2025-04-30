@@ -102,15 +102,17 @@ document.addEventListener('scroll', function () {
   setTimeout(() => {
     if (percent > 60) {
       contentLeft.src = "/img/pierre-maurice.jpg";  
+      contentLeft.style.opacity = 0;
     } else if (percent > 30) {
       contentLeft.src = "/img/khaos.jpg";
+      contentLeft.style.opacity = 0;
     } else if (percent >= 0) {
       contentLeft.src = "/img/khaos_2.jpg";
-
+      contentLeft.style.opacity = 0;
     }
 
     // Fade in the image
-    contentLeft.style.opacity = 0;
+    contentLeft.style.opacity = 1;
   }, 300); // Match this duration to the CSS transition duration
 });
 
