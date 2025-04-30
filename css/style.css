@@ -378,7 +378,7 @@ body.lock-scroll {
 
 .post-author {
   margin-left: 1rem;
-  text-decoration: solid;
+  text-decoration: underline;
   cursor: pointer;
 }
 
