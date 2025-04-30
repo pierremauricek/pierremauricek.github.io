@@ -321,7 +321,6 @@ body.lock-scroll {
     background-color: var(--bg-color-footer);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
-    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     height: 15rem;
     padding: 1rem;
