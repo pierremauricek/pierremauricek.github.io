@@ -94,17 +94,20 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
     const lightboxImg = document.getElementById('lightbox-img');
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
+    document.body.classList.toggle('lock-scroll');
   });
 });
 
 document.querySelector('.close').addEventListener('click', () => {
   document.getElementById('lightbox').style.display = 'none';
+  document.body.classList.toggle('lock-scroll');
 });
 
 window.addEventListener('click', (e) => {
   const lightbox = document.getElementById('lightbox');
   if (e.target === lightbox) {
     lightbox.style.display = 'none';
+    document.body.classList.toggle('lock-scroll');
   }
 });
 
