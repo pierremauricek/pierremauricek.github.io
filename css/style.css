@@ -465,7 +465,7 @@ body.lock-scroll {
         margin-left: 0px;
         width: 100vw;
         height: auto;
-        overflow: visible;
+        overflow: hidden;
         flex-direction: column;
     }
 }
