@@ -332,8 +332,7 @@ body.lock-scroll {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
     position: absolute;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
+    margin: 2rem
     bottom: 0;
     text-decoration: none;
   }
