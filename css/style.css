@@ -359,7 +359,6 @@ body.lock-scroll {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    border-radius: 100%;
     fill: var(--text-color);
     transition: fill 0.3s, color 0.3s;
   }
