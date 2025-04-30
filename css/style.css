@@ -460,7 +460,7 @@ body.lock-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .lightbox-content {
