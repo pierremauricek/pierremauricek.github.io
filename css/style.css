@@ -31,7 +31,6 @@
 a {
   color: var(--text-color);
   text-decoration: none;
-  cursor: pointer;
 }
 
 body {
@@ -388,6 +387,7 @@ body.lock-scroll {
 
 .post-author {
   margin-left: 1rem;
+  text-decoration: underline;
   cursor: pointer;
 }
 
