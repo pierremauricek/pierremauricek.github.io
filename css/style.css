@@ -331,6 +331,9 @@ body.lock-scroll {
   #footer-note {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
     text-decoration: none;
   }
 
