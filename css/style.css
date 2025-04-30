@@ -297,8 +297,6 @@ body.lock-scroll {
     width: calc(100% - 4rem); /* Verhindert, dass das Bild verzerrt wird */
     object-fit: cover;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-
-    transition: opacity 0.3s ease-in-out;
   }
 
   .right {
