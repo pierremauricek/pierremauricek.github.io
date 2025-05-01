@@ -470,7 +470,7 @@ body.lock-scroll {
 .lightbox.show {
   display: flex; /* Make it visible */
   opacity: 1; /* Fully visible */
-  /* Return to normal size */
+  transition: opacity 0.3s ease;
 }
 
 .lightbox-content {
