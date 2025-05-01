@@ -67,7 +67,7 @@ mediaQuery.addEventListener('change', updateTheme);
  document.addEventListener('scroll', function () {
    const contentLeft = document.getElementById("content-left");
  
- Determine scroll percentage
+ //Determine scroll percentage
    const h = document.documentElement,
     b = document.body,
     st = 'scrollTop',
