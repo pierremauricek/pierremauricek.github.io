@@ -463,9 +463,16 @@ body.lock-scroll {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* für Safari */
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  opacity: 0; /* Start fully transparent */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and scale */
 }
 
+.lightbox.show {
+  display: flex; /* Make it visible */
+  opacity: 1; /* Fully visible */
+  transform: scale(1); /* Return to normal size */
+}
 
 .lightbox-content {
   margin: auto;
@@ -476,8 +483,8 @@ body.lock-scroll {
 
 .close {
   position: absolute;
-  top: 2rem;
   right: 2rem;
+  top: 2rem;
   color: var(--text-color);
   font-size: 40pt;
   font-weight: bold;

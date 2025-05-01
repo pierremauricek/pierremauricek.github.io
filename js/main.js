@@ -95,20 +95,23 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
     lightbox.style.display = 'flex';
 
     lightboxImg.src = img.src;
-    document.body.classList.toggle('lock-scroll');
-  }, 300);
+    lightbox.classList.add('show');
+    document.body.classList.add('lock-scroll');
+  });
 });
 
 document.querySelector('.close').addEventListener('click', () => {
   document.getElementById('lightbox').style.display = 'none';
-  document.body.classList.toggle('lock-scroll');
+  lightbox.classList.remove('show');
+  document.body.classList.remove('lock-scroll');
 });
 
 window.addEventListener('click', (e) => {
   const lightbox = document.getElementById('lightbox');
   if (e.target === lightbox) {
-    lightbox.style.display = 'none';
-    document.body.classList.toggle('lock-scroll');
+    
+    lightbox.classList.remove('show');
+    document.body.classList.remove('lock-scroll');
   }
 });
 
