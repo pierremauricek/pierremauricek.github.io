@@ -63,7 +63,7 @@ mediaQuery.addEventListener('change', updateTheme);
 
 
 
- Change Main Image on Scroll with Fade Animation
+ //Change Main Image on Scroll with Fade Animation
  document.addEventListener('scroll', function () {
    const contentLeft = document.getElementById("content-left");
  
