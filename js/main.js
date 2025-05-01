@@ -77,9 +77,9 @@ mediaQuery.addEventListener('change', updateTheme);
  
    setTimeout(() => {
      if (percent > 60) {
-       contentLeft.src = "/img/khaos_1.jpg";  
+        contentLeft.src = "/img/khaos_1.jpg";  
      } else if (percent >= 0) {
-//  //      contentLeft.src = "/img/khaos_2.jpg";
+        contentLeft.src = "/img/khaos_2.jpg";
      }
    }, 300); // Match this duration to the CSS transition duration
  });
