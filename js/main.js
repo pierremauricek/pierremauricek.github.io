@@ -63,26 +63,26 @@ mediaQuery.addEventListener('change', updateTheme);
 
 
 
-// Change Main Image on Scroll with Fade Animation
-// document.addEventListener('scroll', function () {
-//   const contentLeft = document.getElementById("content-left");
-// 
-// Determine scroll percentage
-//   const h = document.documentElement,
-//     b = document.body,
-//     st = 'scrollTop',
-//     sh = 'scrollHeight';
-// 
-//   const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-// 
-//   setTimeout(() => {
-//     if (percent > 60) {
-//       contentLeft.src = "/img/khaos_1.jpg";  
-//     } else if (percent >= 0) {
+ Change Main Image on Scroll with Fade Animation
+ document.addEventListener('scroll', function () {
+   const contentLeft = document.getElementById("content-left");
+ 
+ Determine scroll percentage
+   const h = document.documentElement,
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+ 
+   const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+ 
+   setTimeout(() => {
+     if (percent > 60) {
+       contentLeft.src = "/img/khaos_1.jpg";  
+     } else if (percent >= 0) {
 //  //      contentLeft.src = "/img/khaos_2.jpg";
- //    }
-//   }, 300); // Match this duration to the CSS transition duration
-// });
+     }
+   }, 300); // Match this duration to the CSS transition duration
+ });
 
 
 
