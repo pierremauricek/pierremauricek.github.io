@@ -92,7 +92,6 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
   img.addEventListener('click', () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    lightbox.style.display = 'flex';
 
     lightboxImg.src = img.src;
     lightbox.classList.add('show');

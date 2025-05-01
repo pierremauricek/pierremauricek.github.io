@@ -463,15 +463,14 @@ body.lock-scroll {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* für Safari */
   color: var(--text-color);
-  opacity: 0; /* Start fully transparent */
-  transform: scale(0.9); /* Start slightly smaller */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and scale */
+  opacity: 0; /* Start fully transparent *//* Start slightly smaller */
+  transition: opacity 0.3s ease; /* Smooth fade and scale */
 }
 
 .lightbox.show {
   display: flex; /* Make it visible */
   opacity: 1; /* Fully visible */
-  transform: scale(1); /* Return to normal size */
+  /* Return to normal size */
 }
 
 .lightbox-content {
