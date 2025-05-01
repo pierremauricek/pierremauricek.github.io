@@ -276,6 +276,8 @@ body.lock-scroll {
   .container {
     display: flex;
     flex: 1;
+    max-width: 1400px;
+    align-self: center;
   }
   
   .left {
@@ -394,7 +396,7 @@ body.lock-scroll {
 }
 
 .post-content {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 
