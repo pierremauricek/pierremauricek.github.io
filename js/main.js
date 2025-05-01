@@ -4,8 +4,8 @@
   const menu = document.getElementById('menu');
 
   toggleMenu.addEventListener('click', () => {
-    menu.classList.add('open');
-    document.body.classList.add('lock-scroll');
+    menu.classList.toggle('open');
+    document.body.classList.toggle('lock-scroll');
   });
 
   document.querySelectorAll('.menu a').forEach(link => {
