@@ -108,7 +108,6 @@ document.querySelector('.close').addEventListener('click', () => {
 window.addEventListener('click', (e) => {
   const lightbox = document.getElementById('lightbox');
   if (e.target === lightbox) {
-    
     lightbox.classList.remove('show');
     document.body.classList.remove('lock-scroll');
   }
