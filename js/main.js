@@ -92,24 +92,24 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
   img.addEventListener('click', () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-
     lightboxImg.src = img.src;
-    lightbox.classList.add('show');
-    document.body.classList.add('lock-scroll');
+
+    lightbox.classList.add('show'); // Add the "show" class to trigger the animation
+    document.body.classList.add('lock-scroll'); // Prevent scrolling
   });
 });
 
 document.querySelector('.close').addEventListener('click', () => {
-  document.getElementById('lightbox').style.display = 'none';
-  lightbox.classList.remove('show');
-  document.body.classList.remove('lock-scroll');
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('show'); // Remove the "show" class to hide the lightbox
+  document.body.classList.remove('lock-scroll'); // Re-enable scrolling
 });
 
 window.addEventListener('click', (e) => {
   const lightbox = document.getElementById('lightbox');
   if (e.target === lightbox) {
-    lightbox.classList.remove('show');
-    document.body.classList.remove('lock-scroll');
+    lightbox.classList.remove('show'); // Remove the "show" class to hide the lightbox
+    document.body.classList.remove('lock-scroll'); // Re-enable scrolling
   }
 });
 

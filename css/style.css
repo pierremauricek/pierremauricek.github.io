@@ -486,6 +486,7 @@ body.lock-scroll {
   top: 2rem;
   color: var(--text-color);
   font-size: 40pt;
+  line-height: 0.5;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
