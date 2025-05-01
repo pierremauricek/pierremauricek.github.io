@@ -382,8 +382,11 @@ body.lock-scroll {
 
 .post-author {
   margin-left: 1rem;
-  text-decoration: underline;
   cursor: pointer;
+}
+
+.post-author a {
+  text-decoration: underline;
 }
 
 .post-author-image {
