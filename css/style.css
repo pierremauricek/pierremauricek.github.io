@@ -24,13 +24,14 @@
 
 
 
-html {
+* {
     cursor: url(/img/cursor.png), default;
 }
 
 a {
   color: var(--text-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 body {
@@ -394,11 +395,6 @@ body.lock-scroll {
   margin-left: 0.5rem;
   cursor: pointer;
 }
-
-.post-content {
-  /*margin-bottom: 1rem;*/
-}
-
 
 .post-tags .tag {
   display: inline-block;
