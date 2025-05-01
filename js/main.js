@@ -94,8 +94,8 @@ document.querySelectorAll('.lightbox-image').forEach(img => {
     const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = img.src;
 
-    lightbox.classList.add('show'); // Add the "show" class to trigger the animation
-    document.body.classList.add('lock-scroll'); // Prevent scrolling
+    lightbox.classList.toggle('show'); // Add the "show" class to trigger the animation
+    document.body.classList.toggle('lock-scroll'); // Prevent scrolling
   });
 });
 
