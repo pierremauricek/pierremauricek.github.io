@@ -22,11 +22,29 @@
   --text-color-blog-post: rgba(255, 255, 255, 1.0);
 }
 
-
-
-* {
-    cursor: url(/img/cursor.png), default;
+html, body,
+video, canvas {
+  cursor: none !important;
 }
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;    /* match your image size */
+  height: 32px;
+  pointer-events: none;
+  will-change: transform;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 9999;
+  background: url('/img/cursor.png') no-repeat center center;
+  background-size: contain;
+}
+
+
+/* * {
+    cursor: url(/img/cursor.png), default;
+}*/
 
 a {
   color: var(--text-color);
