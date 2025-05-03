@@ -345,6 +345,9 @@ body.lock-scroll {
     bottom: 0;
     text-decoration: none;
     font-size: 10pt;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 /*FOOTER*/
 
