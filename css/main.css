@@ -1,0 +1,378 @@
+:root {
+    --bg-color: rgba(240, 240, 240, 1.0);
+    --bg-color-header: rgba(240, 240, 240, 0.2);
+    --bg-colog-blog-post: rgba(255, 255, 255, 1.0);
+    --bg-color-blog-tags: rgba(224, 224, 224, 1.0);
+    --bg-color-footer: rgba(150, 150, 150, 0.2);
+    --logo-color: rgba(0, 0, 0, 1.0);
+    --menu-button-color: rgba(0, 0, 0, 1.0);
+    --text-color: rgba(0, 0, 0, 1.0);
+    --text-color-blog-post: rgba(0, 0, 0, 1.0);
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: rgba(0, 0, 0, 1.0);
+    --bg-color-header: rgba(0, 0, 0, 0.2 );
+    --bg-color-blog-post: rgba(240, 240, 240, 0.2);
+    --bg-color-blog-tags: rgba(35, 35, 35, 1.0);
+    --bg-color-footer: rgba(0, 0, 0, 0.2);
+    --logo-color: rgba(240, 240, 240, 1.0);
+    --menu-button-color: rgba(240, 240, 240, 1.0);
+    --text-color: rgba(240, 240, 240, 1.0);
+    --text-color-blog-post: rgba(255, 255, 255, 1.0);
+  }
+  
+  html, body,
+  video, canvas {
+    cursor: none !important;
+  }
+  
+  
+  * {
+      cursor: url(/img/cursor.png), default;
+  }
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  body {
+      margin: 0;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 10pt;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+     
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.lock-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  
+  
+  .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: var(--bg-color-header);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); /* für Safari */
+      color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 1rem;
+      height: 4rem;
+      z-index: 5;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+    }
+  
+  
+  
+    .logo {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    cursor: pointer;
+    }
+  
+  #logo-image{
+    margin-top: 0;
+    cursor: pointer;
+    fill: var(--logo-color);
+    transition: fill 0.3s, color 0.3s;
+  }
+  
+  #logo-image path {
+    cursor: pointer;
+  }
+  
+  /*MENU*/
+  
+  #menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.8rem;
+    display: inline-flex;
+    position: absolute;
+  }
+  
+  #menu-button-image {
+    margin: 0;
+    cursor: pointer;
+    fill: var(--menu-button-color);
+    transition: fill 0.3s, color 0.3s;
+  }
+  
+  #menu-button-image path {
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+      width: 2rem;
+      height: auto
+  }
+  
+  .menu {
+    z-index: 4;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+  
+    background-color: var(--bg-color-header);
+    color: var(--text-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* für Safari */
+    
+  
+    width: 100vw;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu a {
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .menu.open {
+    height: calc(100vh - 6rem);
+    overflow: hidden;
+  }
+  
+  .social-media {
+    display: flex;
+    position: static;
+    justify-content: center;
+    margin-bottom: 2rem;
+    left: 50%;
+    right: 50%;
+  }
+  
+  .social-media img {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  
+  /*MENU*/
+  
+    .hidden {
+      display: none;
+    }
+  
+    .justification {
+      text-align: justify;
+    }
+  
+    .grain {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: none;
+      mix-blend-mode: overlay;
+      z-index: 6;
+      filter: url(#grain);
+      opacity: 0.2;
+    }
+  
+    .button {
+      background-color: var(--bg-color-blog-post);
+      width: 10rem;
+      color: var(--text-color-blog-post);
+      border: none;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+      padding: 1.2rem 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 20px;
+      position: relative; /* Needed for the pseudo-element */
+      overflow: hidden; /* Ensures the pseudo-element respects the border radius */
+      z-index: 0; /* Ensures the text stays above the pseudo-element */
+  }
+  
+  
+  /*SITE STRUCTURE*/
+  
+    .page-wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .container {
+      display: flex;
+      flex: 1;
+      max-width: 1400px;
+      align-self: center;
+    }
+    
+    .left {
+      width: 50%;
+      position: sticky;
+      background-position: center; 
+      top: 0;
+      height: 100vh;
+      display: flex; /* Flexbox hinzufügen */
+      flex-direction: column; /* Stellt sicher, dass Inhalte vertikal gestapelt werden */
+      justify-content: flex-start; /* Bild nach unten ausrichten */
+      overflow: hidden;
+    }
+     
+    .content-left {
+      margin-top: 9rem; /* Zentriert das Bild horizontal */
+      margin-left: 2rem;
+      border-radius: 20px;
+      
+      height: calc(100% - 11rem); /* Verhindert, dass das Bild verzerrt wird */
+      width: calc(100% - 4rem); /* Verhindert, dass das Bild verzerrt wird */
+      object-fit: cover;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+  
+    .right {
+      width: 50%;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    
+    .content-right {
+      margin-top: 8.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+    
+  /*SITE STRUCTURE*/
+  
+
+  #theme-toggle {
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0px -1px 3px 1px rgba(0,0,0,0.1);
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+    padding: 0.8rem;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    
+    
+    cursor: pointer;
+    font-size: 10pt;
+    border-radius: 10px;
+    display: inline-flex;
+    position: absolute; /* Needed for the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element respects the border radius */
+    z-index: 0; /* Ensures the text stays above the pseudo-element */
+  }
+  
+  #theme-toggle::after {
+    content: '';
+    position: relative;
+    inset: 0;
+    border-radius: inherit; /* Matches the button's border radius */
+    pointer-events: none;
+    background: none;
+    mix-blend-mode: overlay;
+    /*filter: url(#grain);*/
+    opacity: 0.2;
+    z-index: -1; /* Places the pseudo-element behind the text */
+  }
+
+  /*FOOTER*/
+  
+    footer {
+      background-color: var(--bg-color-header);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); /* für Safari */
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      height: 15rem;
+      
+      position: relative;
+    }
+  
+    #footer-note {
+      color: var(--text-color);
+      position: absolute;
+      margin: 2rem;
+      bottom: 0;
+      text-decoration: none;
+      font-size: 10pt;
+    }
+  /*FOOTER*/
+  
+  /*MEDIA QUERIES – iPhone*/
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      rotate: 90deg;
+    }
+  
+      .left {
+          display: none; /* Hides the left container */
+          width: 0; /* Ensures it takes no space */
+          height: 0; /* Ensures it takes no space */
+      }
+  
+      .right {
+          margin-left: 0px;
+          width: 100vw;
+          height: auto;
+          overflow: hidden;
+          flex-direction: column;
+      }
+  }
+  
+  /*MEDIA QUERIES – iPad*/
+  
+  /*MEDIA QUERIES*/
+  
