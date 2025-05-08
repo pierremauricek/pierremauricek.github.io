@@ -1,0 +1,33 @@
+.right {
+margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+      rotate: 90deg;
+    }
+  
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack .left and .right vertically */
+    }
+
+
+    .left, .right {
+        width: 100vw; /* Full width */
+        height: auto; /* Adjust height based on content */
+        overflow: hidden; /* Prevent scrollbars */
+        display: block; /* Ensure they are block-level elements */
+        position: relative; /* Prevent overlapping */
+        z-index: auto; /* Ensure proper stacking order */
+    }
+
+    .left {
+        z-index: 1; /* Ensure .left stays below .right */
+    }
+
+    .right {
+        z-index: 2; /* Ensure .right stays above .left */
+        margin-bottom: 2rem;
+    }
+  }

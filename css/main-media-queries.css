@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .menu-button {
+      rotate: 90deg;
+    }
+  
+      .left {
+          display: none; /* Hides the left container */
+          width: 0; /* Ensures it takes no space */
+          height: 0; /* Ensures it takes no space */
+      }
+  
+      .right {
+          width: 100vw;
+          height: auto;
+          overflow: hidden;
+          flex-direction: column;
+      }
+  }

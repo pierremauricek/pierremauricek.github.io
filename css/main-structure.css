@@ -1,0 +1,54 @@
+ /*SITE STRUCTURE*/
+  
+ .page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+    flex: 1;
+    max-width: 1400px;
+    align-self: center;
+  }
+  
+  .left {
+    width: 50%;
+    position: sticky;
+    background-position: center; 
+    top: 0;
+    height: 100vh;
+    display: flex; /* Flexbox hinzufügen */
+    flex-direction: column; /* Stellt sicher, dass Inhalte vertikal gestapelt werden */
+    justify-content: flex-start; /* Bild nach unten ausrichten */
+    overflow: hidden;
+  }
+   
+  .content-left {
+    margin-top: 9rem; /* Zentriert das Bild horizontal */
+    margin-left: 2rem;
+    border-radius: 20px;
+    
+    height: calc(100% - 11rem); /* Verhindert, dass das Bild verzerrt wird */
+    width: calc(100% - 4rem); /* Verhindert, dass das Bild verzerrt wird */
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .right {
+    width: 50%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .content-right {
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+  
+/*SITE STRUCTURE*/
