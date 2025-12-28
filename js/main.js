@@ -17,11 +17,6 @@
   // MENU TOGGLE
 
 
-
-
-
-
-
 const root = document.documentElement;
 
 // Lade gespeichertes Theme beim Laden der Seite
